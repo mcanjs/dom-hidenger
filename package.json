@@ -1,7 +1,7 @@
 {
   "name": "dominger",
-  "version": "1.0.0",
-  "description": "Remove HTML DOM but save data",
+  "version": "1.0.1",
+  "description": "Using local storage DOM Manipulation",
   "main": "./assets/js/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

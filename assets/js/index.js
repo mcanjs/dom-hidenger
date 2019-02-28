@@ -60,4 +60,4 @@ var Dominger = (function () {
     
 })();
 
-// module.exports = Dominger;
+module.exports = Dominger;

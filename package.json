@@ -1,0 +1,30 @@
+{
+  "name": "dominger",
+  "version": "1.0.0",
+  "description": "Remove HTML DOM but save data",
+  "main": "./assets/js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcannspin/dom-hidenger.git"
+  },
+  "keywords": [
+    "Dom",
+    "Dom Hide",
+    "Hide",
+    "Delete",
+    "Delete Dom",
+    "Dom Manipulasion",
+    "Dom Manipülasyonu",
+    "Gizle",
+    "Sil"
+  ],
+  "author": "Mehmet Can Kızılyer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mcannspin/dom-hidenger/issues"
+  },
+  "homepage": "https://github.com/mcannspin/dom-hidenger#readme"
+}

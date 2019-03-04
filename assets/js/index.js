@@ -1,32 +1,6 @@
-var Dominger = (function () {
-    "use strict";
+"use strict";
 
-    function _privateRoles (el, rolesArr, userRole) {
-        
-        for ( var i = 0; i < rolesArr.length; i += 1 ) {
-            if ( userRole && rolesArr[i] === userRole ) {
-                console.log('%c User Role: '+ rolesArr[i] + ' ', 'background: #47c; color: #fff');
-                var getAttributes = _checkAttr(el);
-                if ( rolesArr[i] ===  ) 
-            }
-        }
-    }
-    
-    function _checkAttr (el) {
-        var el = document.querySelectorAll(el);
-        for ( var i = 0; i < el.length; i += 1  ) {
-            var _secureAttr = el[i].getAttribute('data-secure');
-            var _roleAttr = el[i].getAttribute('data-role');
-            if (_secureAttr === "true" && _roleAttr) {
-                return [_secureAttr, _roleAttr];
-            } else if (_secureAttr === "true") {
-                return [_secureAttr];
-            } else {
-                return [_roleAttr];
-            }
-        }
-    }
-    
+var Dominger = (function () {
     return {
         storage: function (name, data, index) {
             this.data = data;
@@ -40,17 +14,10 @@ var Dominger = (function () {
                 alert('You\'re browser old. Not working storage');
             }
         },
-        hide: function (name, el, type, roles, userRole) {
+        hide: function (name, el, type) {
             this.name = name;
             this.el = el;
             this.type = type;
-            this.roles = roles;
-            this.userRole = userRole;
-
-            if ( this.roles ) {
-                _privateRoles(this.el, this.roles, this.userRole);
-            }
-            
             if (this.type === 'multi') {
                 this.dom = document.querySelectorAll(this.el);
                 var name = this.name;
@@ -93,4 +60,4 @@ var Dominger = (function () {
     
 })();
 
-// module.exports = Dominger;
+module.exports = Dominger;
